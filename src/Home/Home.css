@@ -1,0 +1,41 @@
+
+.container1 {
+  display: flex;
+}
+
+.sidebar1 {
+  width: 200px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+  font-size: small;
+  font-family: Abel;
+}
+
+.content1 {
+  flex: 1;
+  padding: 20px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.icon svg {
+  margin-right: 10px;
+}
+
+.icon-text {
+  font-size: 12px;
+  padding-right: 10px;
+}
+/* Home.css */
+

@@ -1,38 +1,127 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.split-screen {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.left-side {
+  flex: 1;
+  max-width: 500px;
+  background-image: linear-gradient(
+    135deg,
+    rgba(0, 54, 54),
+    rgba(125, 201, 191, 0.899),
+    rgb(0, 54, 54)
+  );
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 18px;
+  margin: 0;
+  color: rgb(93, 208, 201);
+}
+
+.form-group {
+  /*margin-bottom: 10px;*/
+  color: black;
+  font-weight: bold;
+  display: flex;
+  margin-top: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 5px 8.5px;
+  border: 1px solid rgb(93, 208, 201);
+}
+
+.btn {
+  width: 100%;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  background-color: rgb(93, 208, 201);
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Linkler */
+a {
+  text-decoration: none;
+  color: rgb(93, 208, 201);
+}
+
+p {
+  color: #a5a8a8;
+}
+
+.form-password {
+  text-align: right;
+  margin-bottom: 0px;
+  width: auto;
+  flex-grow: 1;
+}
+.or {
+  margin-left: 46%;
+  color: #a5a8a8;
+  margin-top: 5px;
+}
+.h3 {
+  color: #a5a8a8;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  width: 80%;
+  height: auto;
+  margin-top: -90%;
+  padding: 50px;
+  text-align: center;
 }
